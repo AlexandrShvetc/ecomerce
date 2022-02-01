@@ -2,7 +2,7 @@
   "name": "ecomerce",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bootstrap": "4.6",
     "gulp": "^4.0.2"
   }
 }
