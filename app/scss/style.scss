@@ -1,0 +1,33 @@
+//@import "node_modules/bootstrap/scss/bootstrap-grid";
+//@import "node_modules/bootstrap/scss/bootstrap-reboot";
+
+html, body {
+  background-color: #F8F8F8;
+  font: {
+    family: Inter;
+    style: normal;
+    weight: normal;
+    size: 16px;
+  };
+  line-height: 150%;
+  letter-spacing: 0.0275em;
+  color: #19191D;
+}
+
+%display-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  @extend %display-flex;
+}
+
+.main-section {
+  max-width: 1492px;
+
+  .top-nav {
+    @extend %display-flex
+  }
+}
