@@ -11,6 +11,9 @@
   "description": "[Template](https://www.figma.com/file/CJqK9X8aXWxoFd8VpCONg8/Ecommerce-Desktop-Template-(Copy)?node-id=1%3A5045)",
   "dependencies": {
     "bootstrap": "4.6",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.7.0",
@@ -21,7 +24,6 @@
     "gulp-uglify": "^3.0.2",
     "sass": "^1.49.4"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlexandrShvetc/test_ecomerce.git"

@@ -29,7 +29,6 @@ const jsPath = [
     './app/js/script.js'
 ]
 
-
 function imageMin() {
     return src(appPath.img)
         .pipe(imagemin())
