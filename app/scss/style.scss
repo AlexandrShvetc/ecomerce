@@ -25,7 +25,6 @@ html, body {
   color: #19191D;
 }
 
-
 header {
   @extend %display-flex;
   max-width: 100%;
@@ -56,22 +55,11 @@ header {
       background: url('../images/search.svg') #EDEDF0 no-repeat 15px center;
       border-radius: 99px;
       border: 0;
-      padding: 15px 44px;
+      padding: 15px 15px 15px 44px;
       font: {
         size: 1.25rem;
         weight: bold;
       }
-    }
-  ;
-
-    button {
-      position: relative;
-      background: url('../images/x-icon.svg') no-repeat;
-      right: 30px;
-      height: 14px;
-      width: 14px;
-      border: 0;
-
     }
   }
 
@@ -91,14 +79,31 @@ header {
       padding: 8px 12px;
       border: 1px solid #9DC2FF;
       border-radius: 4px;
-      color: $header-blue;
-      font-weight: bold;
       background-color: $main-background-color;
+
+      a {
+        margin: 0;
+        padding: 0;
+        color: $header-blue;
+        font-weight: bold;
+      }
+
+      &.cart {
+        position: relative;
+        border: 0;
+        box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2), 0px 4px 8px rgba(41, 121, 255, 0.2);
+
+        img {
+          position: absolute;
+          top: -2px;
+          right: -2px;
+        }
+      ;
+      }
+    ;
     }
   }
-
 }
-
 
 .main-section {
   max-width: 1492px;
@@ -114,13 +119,27 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      img{
+
+      &:hover {
+        cursor: pointer;
+        svg path {
+          fill: #2979FF;
+        }
+
+        p {
+          color: #2979FF;
+        }
+      }
+
+      svg {
         margin: auto;
-      };
+      }
+
       p {
         margin-bottom: 0;
         font-size: 0.875rem;
       }
     }
   }
+;
 }

@@ -24,10 +24,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexandrShvetc/ecomerce.git"
+    "url": "git+https://github.com/AlexandrShvetc/test_ecomerce.git"
   },
   "bugs": {
-    "url": "https://github.com/AlexandrShvetc/ecomerce/issues"
+    "url": "https://github.com/AlexandrShvetc/test_ecomerce/ecomerce/issues"
   },
-  "homepage": "https://github.com/AlexandrShvetc/ecomerce#readme"
+  "homepage": "https://github.com/AlexandrShvetc/test_ecomerce#readme"
 }
