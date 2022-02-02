@@ -25,6 +25,12 @@ html, body {
   align-items: center;
 }
 
+%flex-center {
+  display: flex;
+  align-items: center;
+}
+
+
 a {
   text-decoration: none;
 
@@ -120,6 +126,7 @@ header {
   .top-nav {
     @extend %display-flex;
     padding: 18px 4px 4px;
+    margin-bottom: 16px;
 
     .top-nav-items {
       min-height: 56px;
@@ -152,5 +159,93 @@ header {
       }
     }
   }
-;
+
+  .sidebar {
+    width: 355px;
+    padding: 24px 51px 0 0;
+
+    .filter {
+      width: 100%;
+      font: {
+        family: Quicksand;
+        style: normal;
+        weight: bold;
+        size: 1.5rem;
+      }
+      padding: 8px 20px 8px 52px;
+      background: url("../images/filter.png") no-repeat 15px center;
+      border: 1px solid #9DC2FF;
+      border-radius: 8px;
+      margin-bottom: 40px;
+    }
+
+    .tree {
+      ul, li {
+        margin-bottom: 16px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 16px;
+
+
+        .categories {
+          @extend %flex-center;
+          margin-bottom: 16px;
+
+          img {
+            width: 8px;
+            height: 13px;
+          }
+
+          p {
+            padding: 0 0 0 16px;
+            margin: 0;
+            color: #19191D;
+
+            &.under {
+              font-size: 0.875rem;
+              color: #787885;
+            }
+          }
+        }
+
+        .show-more {
+          background: #EBF2FF;
+          border-radius: 4px;
+          border: 0;
+          padding: 12px 48px 12px 12px;
+          color: #2264D1;
+          font-size: 0.875rem;
+        }
+
+        .electronicks {
+          @extend %flex-center;
+          font-weight: 700;
+          margin-bottom: 16px;
+
+          div {
+            margin-left: 14px;
+          }
+        }
+        .cell-phone {
+          padding-left: 25px;
+          font-weight: 400;
+        }
+        .expand{
+          background: #EBF2FF;
+          border-radius: 4px;
+          border: 0;
+          padding: 12px;
+          margin-left: 20px;
+          font: {
+            family: Roboto;
+            style: normal;
+            weight: bold;
+            size: 0.875rem;
+          }
+        }
+      }
+    }
+  }
 }
