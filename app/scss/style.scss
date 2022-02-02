@@ -5,13 +5,6 @@ $header-gray: #5A5B6A;
 $header-blue: #2264D1;
 $main-background-color: #FFFFFF;
 
-%display-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
 html, body {
   background-color: $main-background-color;
   font: {
@@ -23,6 +16,21 @@ html, body {
   line-height: 150%;
   letter-spacing: 0.0275em;
   color: #19191D;
+}
+
+
+%display-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 header {
@@ -43,7 +51,7 @@ header {
     margin-left: 20px;
   }
 
-  form {
+  .search-form {
     @extend %display-flex;
     position: relative;
     margin-right: 14px;
@@ -122,6 +130,7 @@ header {
 
       &:hover {
         cursor: pointer;
+
         svg path {
           fill: #2979FF;
         }
@@ -138,6 +147,8 @@ header {
       p {
         margin-bottom: 0;
         font-size: 0.875rem;
+        color: #19191D;
+
       }
     }
   }
