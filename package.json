@@ -7,7 +7,7 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "[Template](https://www.figma.com/file/CJqK9X8aXWxoFd8VpCONg8/Ecommerce-Desktop-Template-(Copy)?node-id=1%3A5045)",
   "dependencies": {
     "bootstrap": "4.6",
     "gulp": "^4.0.2",
@@ -19,5 +19,14 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.49.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandrShvetc/ecomerce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexandrShvetc/ecomerce/issues"
+  },
+  "homepage": "https://github.com/AlexandrShvetc/ecomerce#readme"
 }

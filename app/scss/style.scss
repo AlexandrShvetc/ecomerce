@@ -1,8 +1,19 @@
 //@import "node_modules/bootstrap/scss/bootstrap-grid";
-//@import "node_modules/bootstrap/scss/bootstrap-reboot";
+@import "node_modules/bootstrap/scss/bootstrap-reboot";
+
+$header-gray: #5A5B6A;
+$header-blue: #2264D1;
+$main-background-color: #FFFFFF;
+
+%display-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 html, body {
-  background-color: #F8F8F8;
+  background-color: $main-background-color;
   font: {
     family: Inter;
     style: normal;
@@ -14,20 +25,102 @@ html, body {
   color: #19191D;
 }
 
-%display-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 header {
   @extend %display-flex;
+  max-width: 100%;
+  margin: 0;
+  padding: 20px 18px;
+
+  .left-header, .center-header, .right-header {
+    @extend %display-flex;
+  }
+
+  .left-header * {
+    margin-right: 38px;
+  }
+
+  .right-header * {
+    margin-left: 20px;
+  }
+
+  form {
+    @extend %display-flex;
+    position: relative;
+    margin-right: 14px;
+
+    input {
+      display: block;
+      height: 48px;
+      width: 668px;
+      background: url('../images/search.svg') #EDEDF0 no-repeat 15px center;
+      border-radius: 99px;
+      border: 0;
+      padding: 15px 44px;
+      font: {
+        size: 1.25rem;
+        weight: bold;
+      }
+    }
+  ;
+
+    button {
+      position: relative;
+      background: url('../images/x-icon.svg') no-repeat;
+      right: 30px;
+      height: 14px;
+      width: 14px;
+      border: 0;
+
+    }
+  }
+
+  a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: $header-gray;
+  }
+
+
+  .a-right {
+    color: $header-blue;
+  }
+
+  .right-header {
+    button {
+      padding: 8px 12px;
+      border: 1px solid #9DC2FF;
+      border-radius: 4px;
+      color: $header-blue;
+      font-weight: bold;
+      background-color: $main-background-color;
+    }
+  }
+
 }
+
 
 .main-section {
   max-width: 1492px;
+  margin: 16px auto;
 
   .top-nav {
-    @extend %display-flex
+    @extend %display-flex;
+    padding: 18px 4px 4px;
+
+    .top-nav-items {
+      min-height: 56px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      //align-content: center;
+      justify-content: space-between;
+      img{
+        margin: auto;
+      };
+      p {
+        margin-bottom: 0;
+      }
+    }
   }
 }
