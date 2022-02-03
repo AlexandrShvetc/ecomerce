@@ -270,5 +270,20 @@ header {
         }
       }
     }
+
+    .colapsed-filter {
+      width: 100%;
+      padding: 6px 60px 10px 8px;
+      margin-top: 16px;
+      box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24), 0px 2px 4px rgba(90, 91, 106, 0.24);
+      border-radius: 4px;
+      border: 0;
+      background: url("../images/downarrow.svg") no-repeat 95% center;
+      text-align: left;
+      a{
+        font-family: Roboto, serif;
+        color: #19191D;
+      }
+    }
   }
 }
