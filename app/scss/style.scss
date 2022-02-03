@@ -174,6 +174,11 @@ header {
     }
   }
 
+  .shop-section {
+    @extend %display-flex;
+    align-items: start;
+  }
+
   .sidebar {
     width: 355px;
     padding: 24px 51px 0 0;
@@ -186,7 +191,7 @@ header {
         weight: bold;
         size: 1.5rem;
       }
-      padding: 8px 20px 8px 52px;
+      padding: 22px 20px 22px 52px;
       background: url("../images/filter.png") no-repeat 15px center;
       border: 1px solid #9DC2FF;
       border-radius: 8px;
@@ -280,11 +285,13 @@ header {
       border: 0;
       background: url("../images/downarrow.svg") no-repeat 95% center;
       text-align: left;
-      a{
+
+      a {
         font-family: Roboto, serif;
         color: #19191D;
       }
     }
+
     .check-box-filter {
       margin-top: 24px;
       padding-top: 8px;
@@ -292,18 +299,94 @@ header {
       padding-bottom: 16px;
       background: url("../images/uparrow.svg") #F7F7FA no-repeat 95% 5%;
       border-radius: 4px;
+
       p {
         font-weight: 700;
         margin-bottom: 4px;
       }
+
       .checkbox {
         margin-top: 14px;
         margin-left: 7px;
+
         label {
           margin-bottom: 0;
           margin-left: 19px;
         }
       }
     }
+  }
+
+  .content {
+    width: 100%;
+    margin-left: 24px;
+    margin-top: 24px;
+    padding: 16px;
+    box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24), 0px 2px 4px rgba(90, 91, 106, 0.24);
+    border-radius: 8px;
+    border: 0;
+
+    .head-buttons {
+      @extend %display-flex;
+
+      .head-buttons-left {
+        @extend %display-flex;
+        gap: 16px;
+
+        button {
+          padding: 7px 12px;
+          background-color: #FFFFFF;
+          border: 1px solid #B4B4BB;
+          box-sizing: border-box;
+          border-radius: 4px;
+
+          a {
+            color: #787885;
+            font-size: 0.875rem;
+          }
+
+          img {
+            margin-left: 15px;
+          }
+        }
+
+        .sort-by {
+          position: relative;
+          border: 1px solid #5A5B6A;
+
+          a {
+            color: #19191D;
+            font-size: 0.875rem;
+            font-weight: 700;
+          }
+
+          .sort-img {
+            background-color: #FFFFFF;
+            z-index: 2;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: -8px;
+            left: 12px;
+            color: #787885;
+            font: {
+              size: 0.625rem;
+              family: Roboto;
+              weight: 500;
+            };
+            line-height: 1rem;
+          }
+        }
+
+      }
+      .head-buttons-right{
+        @extend %display-flex;
+        gap: 24px;
+      }
+
+
+
+    }
+
   }
 }
